@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFDB45"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sousuo"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/home_search_ico"
+            />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            app:tabIndicatorColor="#f00"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="#f00"
+            app:tabTextAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            ></android.support.design.widget.TabLayout>
+
+        <Button
+            android:id="@+id/paihang"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/home_message_ico"
+            />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        ></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

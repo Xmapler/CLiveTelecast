@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_40"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_35"
+                android:gravity="center"
+                android:textSize="@dimen/sp_15"
+                android:textColor="#936D63"
+                android:text="+86"/>
+
+            <EditText
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textSize="@dimen/sp_15"
+                android:textColor="#C0A49D"
+                android:layout_weight="3"
+                android:textColorHint="#C0A59D"
+                android:paddingBottom="@dimen/dp_20"
+                android:digits="0123456789"
+                android:maxLength="11"
+                android:hint="请输入手机号"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_17"
+                android:text="获取验证码"
+                android:background="#FFDB45"
+                android:layout_gravity="top" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:hint="请输入短信验证码"
+            android:textColorHint="#C0A59D"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:hint="请输入4-16位密码"
+            android:textColorHint="#C0A59D"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:maxLength="16"
+            android:drawableRight="@mipmap/reg_hide_pwd" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_35"
+            android:textColor="#7F4E34"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@mipmap/phone_loginbtnbg"
+            android:text="确认注册"/>
+
+    </LinearLayout>
+
+</LinearLayout>
